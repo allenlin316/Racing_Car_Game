@@ -24,6 +24,10 @@ private slots:
 
     void on_buttonStart_clicked();
 
+    void on_action_Start_Game_triggered();
+
+    void on_actionStop_triggered();
+
 private:
     Ui::MainWindow *ui;
 
@@ -41,5 +45,8 @@ private:
     void gamePause();
     void gameStop();
     void moveCar();
+    void moveBlocks();  //障礙物
+    void detectBlocks();
+    bool isCollision(int x, int y);     //判斷是否撞到
 };
 #endif // MAINWINDOW_H
